@@ -1,0 +1,20 @@
+{
+  "name": "vitest-coverage-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:vitest": "vitest --run --coverage",
+    "test:c8": "c8 node run-c8.mjs",
+    "format": "cat coverage/coverage-final.json | jq --compact-output '.[] | {path, fnMap}' | jq -s --compact-output . | prettier --parser json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "c8": "^7.11.3",
+    "vitest": "^0.12.6",
+    "esbuild": "^0.14.39",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  }
+}
