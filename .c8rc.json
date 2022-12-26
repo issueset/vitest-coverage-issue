@@ -1,3 +1,4 @@
 {
-  "reporter": ["json", "text", "html"]
+  "reporter": ["json", "text", "html"],
+  "reports-dir": "coverage-c8"
 }
